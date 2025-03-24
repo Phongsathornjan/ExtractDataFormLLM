@@ -14,6 +14,8 @@ try:
   df = pd.read_excel(file_path, usecols='A')
   test = 0
   for index, value in df.iterrows():
+    if index < 202:
+      continue
     start_time1 = time.time()
     # print("-------------------Generate Question-------------------")
     response: ChatResponse = chat(model='scb10x/llama3.1-typhoon2-8b-instruct:latest', messages=[
