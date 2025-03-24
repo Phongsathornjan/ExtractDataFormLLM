@@ -76,7 +76,6 @@ try:
     })
   
     print(f"----------------QA{index}----------------")
-    print(final_result[index])
 
     test+= 1
     if(test == 500):
